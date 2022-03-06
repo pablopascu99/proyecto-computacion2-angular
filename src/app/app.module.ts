@@ -10,8 +10,12 @@ import { SentimientoComponent } from './sentimiento/sentimiento.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Routes } from '@angular/router';
 
-
+const appRoutes:Routes = [
+  {path:'', component:BienvenidaComponent},
+  {path:'/sentimiento', component:SentimientoComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
