@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sentimiento.component.scss']
 })
 export class SentimientoComponent implements OnInit {
-
+  currentValue = "";
   constructor() { }
 
   ngOnInit(): void {
+  }
+  getTextInputValue(value: any) {
+    this.currentValue = "Texto introducido: " + value;
   }
 
 }

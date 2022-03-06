@@ -1,1 +1,15 @@
-<p>sentimiento works!</p>
+<div class="ppal-container">
+    <h1> Análisis de sentimiento </h1>
+    <p class="sentiment-definition"> El análisis de sentimiento es el campo de estudio que analiza las opiniones, 
+        sentimiento, evaluaciones, actitudes y emociones de las personas a partir del lenguaje escrito. 
+        El objetivo principal de este análisis es la creación de un clasificador que permita predecir 
+        la polaridad de un texto respecto a un rango específico de posibles valores categóricos.  </p>
+</div>
+
+<div class="input-container">
+    <input type="text" #box/>
+    <button (click)="getTextInputValue(box.value)"> Analizar </button>
+    <h3> {{currentValue}} </h3>
+</div>
+
+
