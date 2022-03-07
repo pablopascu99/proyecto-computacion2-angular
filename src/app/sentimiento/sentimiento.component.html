@@ -1,10 +1,21 @@
 <div class="contenedor_sentimiento">
     <label for="texto_sentimiento" class="form-label">Introduzca un texto para analizar el sentimiento:</label>
-    <textarea class="form-control" id="texto_sentimiento" rows="3" [(ngModel)]="texto"></textarea>
+    <textarea class="form-control" id="texto_sentimiento" rows="3" [(ngModel)]="texto" (keyup.enter)="analizar_texto()"></textarea>
 </div>
 
 <div class="boton_analizar">
     <button class="btn btn-primary" (click)="analizar_texto()"> Analizar </button>
 </div>
 
-
+<div *ngIf="resultado_visible" class="resultado_sentimiento">
+    <div class="cont_imagen">
+        <img class="imagen_sentimiento" src={{img_sentimiento}} alt="">
+    </div>
+    <div class="texto_insertado">
+        <span><b>Texto Introducido: </b> <i>{{texto}}</i></span>
+    </div>
+    <div class="metricas_sentimiento">
+        <span><b>Pos: </b> {{positivo}}</span>
+        <span><b>Neg: </b> {{negativo}}</span>
+    </div>
+</div>

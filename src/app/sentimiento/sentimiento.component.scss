@@ -12,3 +12,30 @@
     text-align: center;
     padding-bottom: 20px;
 }
+
+.resultado_sentimiento{
+    border-radius: 7px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    background-color: lightgray;
+    border: 2.75px solid lightblue;
+}
+
+.imagen_sentimiento{
+    width: 60px;
+    height: 60px;
+}
+
+.metricas_sentimiento{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto_insertado{
+    padding-top: 35px;
+}
