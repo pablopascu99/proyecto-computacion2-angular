@@ -1,7 +1,10 @@
-<div class="input-container">
-    <input type="text" #box/>
-    <button (click)="getTextInputValue(box.value)"> Analizar </button>
-    <h3> {{currentValue}} </h3>
+<div class="contenedor_sentimiento">
+    <label for="texto_sentimiento" class="form-label">Introduzca un texto para analizar el sentimiento:</label>
+    <textarea class="form-control" id="texto_sentimiento" rows="3" [(ngModel)]="texto"></textarea>
+</div>
+
+<div class="boton_analizar">
+    <button class="btn btn-primary" (click)="analizar_texto()"> Analizar </button>
 </div>
 
 

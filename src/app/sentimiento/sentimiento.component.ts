@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SentimientoApiService } from '../sentimiento-api.service';
 
 @Component({
   selector: 'app-sentimiento',
@@ -6,13 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sentimiento.component.scss']
 })
 export class SentimientoComponent implements OnInit {
-  currentValue = "";
-  constructor() { }
+  texto = "";
+  constructor(private api: SentimientoApiService) { }
+
+  analizar_texto() {
+   let respuesta = this.api.get_sentimiento(this.texto);
+   let resultado_analisis = respuesta.subscribe(sentimiento =>{
+    console.log(sentimiento)
+   });  
+  }
 
   ngOnInit(): void {
+
   }
-  getTextInputValue(value: any) {
-    this.currentValue = "Texto introducido: " + value;
-  }
+
 
 }
