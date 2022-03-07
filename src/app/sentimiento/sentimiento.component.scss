@@ -21,11 +21,17 @@
     text-align: center;
     width: 50%;
     height: 200px;
-    background-color: lightgray;
-    border: 2.75px solid lightblue;
+    background-color: #f6ead1;
+    border: 2.75px solid #dbcbbd;
+}
+
+.caja_sentimiento_analizado{
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .imagen_sentimiento{
+    padding-top: 10px;
     width: 60px;
     height: 60px;
 }
