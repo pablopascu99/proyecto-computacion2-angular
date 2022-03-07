@@ -6,6 +6,7 @@ $green: #83CB53;
 
 .iconLogo{
     display: block;
+    margin-left: -15px;
     width: 100px;
     height: 100px;
 }
@@ -26,4 +27,17 @@ $green: #83CB53;
 
 .navbar-toggler{
     border-color: white;
+}
+
+.navbar-nav {
+    padding: 20px;
+}
+
+.nav-item {
+    padding: 15px;
+    font-size: 16px;
+}
+
+a {
+    letter-spacing: 1px;
 }
