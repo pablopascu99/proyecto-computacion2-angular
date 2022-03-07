@@ -1,0 +1,32 @@
+$blue: #34548B;
+$light-blue: #A1B5D0;
+$red: #F36F61;
+$light-green: #BED442;
+$green: #83CB53;
+
+.main-footer{
+    background: $blue;
+}
+
+.iconImage{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-footer{
+    background: white;
+    transition: 1s; 
+}
+.btn-footer:hover {
+    background: $red;
+}
+
+h5 {
+    letter-spacing: 4px;
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
