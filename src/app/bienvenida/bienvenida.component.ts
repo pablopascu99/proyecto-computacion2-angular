@@ -15,7 +15,7 @@ export class BienvenidaComponent implements OnInit {
   }
 
   irSentimiento() {
-    this.router.navigate(['./sentimiento']);
+    this.router.navigate(['/sentimiento']);
   }
 
 }

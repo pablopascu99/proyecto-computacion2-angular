@@ -1,3 +1,9 @@
+$blue: #34548B;
+$light-blue: #A1B5D0;
+$red: #F36F61;
+$light-green: #BED442;
+$green: #83CB53;
+
 .ppal-container {
     margin-left: 10vw;
     margin-right: 10vw;
@@ -7,6 +13,11 @@
     }
 }
 
+h1 {
+    margin-top: 5vh;
+    text-align: center;
+}
+
 .sentiment-container-button {
     text-align: center;
     
@@ -14,5 +25,7 @@
         margin-top: 2vh;
         margin-bottom: 5vh;
         justify-content: center;
+        color: white;
+        background-color: #34548B;
     }
 }
