@@ -11,12 +11,13 @@ $green: #83CB53;
 }
 
 .container-fluid {
+    margin-top: -10px;
     padding-right: 2.5vw;
     padding-left: 2.5vw;
     background: $blue;
     .nav-link {
         color: white;
-        transition: 1s; 
+        transition: 1s;
     }
 }
 .navbar-toggler-icon{
