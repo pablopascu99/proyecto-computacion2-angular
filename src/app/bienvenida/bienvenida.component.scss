@@ -3,11 +3,25 @@ $light-blue: #A1B5D0;
 $red: #F36F61;
 $light-green: #BED442;
 $green: #83CB53;
-
-.iconImage{
-    width: 20px;
-    height: 20px;
+$light-grey: #DBD9D8;
+.componentes-grid{
+    margin: 40px 40px;
 }
+.componente-card{
+    margin-left: 10%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $blue;
+}
+.iconImage{
+    width: 40px;
+    height: 40px;
+}
+
+.sentiment-definition {
+    text-align: center;
+}
+
 .persona-image{
     width: 100px;
     height: 100px;
@@ -16,16 +30,25 @@ $green: #83CB53;
     margin-left: 10vw;
     margin-right: 10vw;
     .sentiment-definition {
-        text-align: justify;
+        
         margin-bottom: 5vh;
     }
 }
 
 h1 {
     margin-top: 5vh;
+    margin-bottom: 5vh;
     text-align: center;
+    letter-spacing: 5px;
 }
 
+.btn{
+    background: white;
+    transition: 1s; 
+}
+.btn:hover {
+    background: #DBD9D8;
+}
 
 .sentiment-container-button {
     text-align: center;

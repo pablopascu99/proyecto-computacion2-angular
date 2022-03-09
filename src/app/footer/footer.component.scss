@@ -3,6 +3,7 @@ $light-blue: #A1B5D0;
 $red: #F36F61;
 $light-green: #BED442;
 $green: #83CB53;
+$light-grey: #CDCCCC;
 
 .main-footer{
     background: $blue;
@@ -19,7 +20,7 @@ $green: #83CB53;
     transition: 1s; 
 }
 .btn-footer:hover {
-    background: $red;
+    background: $light-grey;
 }
 
 h5 {
