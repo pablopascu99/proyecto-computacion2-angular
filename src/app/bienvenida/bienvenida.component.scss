@@ -44,11 +44,12 @@ h1 {
 
 .btn{
     background: white;
-    transition: 1s; 
+    transition: 1s;
+    &:hover {
+        background: #DBD9D8;
+    } 
 }
-.btn:hover {
-    background: #DBD9D8;
-}
+
 
 .sentiment-container-button {
     text-align: center;
