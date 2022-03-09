@@ -1,3 +1,10 @@
+$blue: #34548B;
+$light-blue: #A1B5D0;
+$red: #F36F61;
+$light-green: #BED442;
+$green: #83CB53;
+$light-grey: #CDCCCC;
+
 .contenedor_sentimiento{
     padding-top: 40px;
     width: 50%;
@@ -17,7 +24,10 @@
     text-align: center;
     padding-bottom: 12px;
 }
-
+.btn-analizar{
+    background-color: $blue;
+    color: white;
+}
 .resultado_sentimiento{
     border-radius: 7px;
     margin: auto;
