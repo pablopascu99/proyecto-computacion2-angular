@@ -18,9 +18,9 @@ $light-grey: #CDCCCC;
 .btn-footer{
     background: white;
     transition: 1s; 
-}
-.btn-footer:hover {
-    background: $light-grey;
+    &:hover {
+        background: $light-grey;
+    }
 }
 
 h5 {
@@ -30,8 +30,10 @@ h5 {
 p {
     letter-spacing: 2px;
 }
-
-a:link { 
-    text-decoration: none; 
+a {
+    letter-spacing: 0.2px;
+    &:link { 
+        text-decoration: none; 
+    }
 }
 

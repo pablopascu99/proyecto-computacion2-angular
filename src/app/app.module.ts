@@ -14,10 +14,6 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
-const appRoutes:Routes = [
-  {path:'', component:BienvenidaComponent},
-  {path:'sentimiento', component:SentimientoComponent}
-]
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +28,6 @@ const appRoutes:Routes = [
     BrowserAnimationsModule,
     MatGridListModule,
     MatCardModule,
-    RouterModule.forRoot(appRoutes),
     HttpClientModule,
     FormsModule
   ],
