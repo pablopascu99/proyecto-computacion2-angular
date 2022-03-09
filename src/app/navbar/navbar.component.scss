@@ -34,8 +34,22 @@ $green: #83CB53;
 }
 
 .nav-item {
-    padding: 15px;
-    font-size: 16px;
+    text-align: center;
+    margin-right: 3vh;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-item:hover{
+    background-color: white;
+    a{
+        color: $green
+    }
+}
+@media (max-width:768px){
+    .nav-item{
+        margin: 0;
+    }
 }
 
 a {
