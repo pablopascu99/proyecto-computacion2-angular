@@ -7,10 +7,11 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="">Home</a>
+            <!-- <a class="nav-link active" aria-current="page" href="">Home</a> -->
+            <a class ="links_nav" routerLink="/" aria-current="page" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}" style="text-decoration: none;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../sentimiento">Análisis de Sentimiento</a>
+            <a class="links_nav" routerLink="../sentimiento" aria-current="page" routerLinkActive="activo" style="text-decoration: none;">Análisis de Sentimiento</a>
           </li>
         </ul>
       </div>

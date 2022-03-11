@@ -48,10 +48,22 @@ $green: #83CB53;
 }
 @media (max-width:768px){
     .nav-item{
-        margin: 0;
+        margin: 10px;
     }
 }
 
 a {
     letter-spacing: 1px;
+
+}
+
+.links_nav {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.activo {
+    
+    text-decoration: underline !important;
+    text-decoration-color: $green;
 }
