@@ -25,13 +25,19 @@ export class SentimientoComponent implements OnInit {
      this.negativo = sentimiento.sentiment.neg;
 
      if(sentimiento.sentiment.compound > 0){
+      document.getElementById("resultado_sentimiento")!.style.background = "#BED442";
+      document.getElementById("resultado_sentimiento")!.style.borderColor = "black";
       this.img_sentimiento = 'assets/images/happiness.png';
 
      } 
      else if (sentimiento.sentiment.compound == 0) {
+      document.getElementById("resultado_sentimiento")!.style.background = "#f6ead1";
+      document.getElementById("resultado_sentimiento")!.style.borderColor = "#dbcbbd";
       this.img_sentimiento = 'assets/images/sceptic.png';
      }
      else{
+       document.getElementById("resultado_sentimiento")!.style.background = "#F36F61";
+       document.getElementById("resultado_sentimiento")!.style.borderColor = "black";
        this.img_sentimiento = 'assets/images/sad.png';
      }
    });  
