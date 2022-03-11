@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { SentimientoApiService } from '../sentimiento-api.service';
 
@@ -24,8 +25,13 @@ export class SentimientoComponent implements OnInit {
      this.negativo = sentimiento.sentiment.neg;
 
      if(sentimiento.sentiment.compound > 0){
-       this.img_sentimiento = 'assets/images/smiley.png';
-     }else{
+      this.img_sentimiento = 'assets/images/happiness.png';
+
+     } 
+     else if (sentimiento.sentiment.compound == 0) {
+      this.img_sentimiento = 'assets/images/sceptic.png';
+     }
+     else{
        this.img_sentimiento = 'assets/images/sad.png';
      }
    });  
