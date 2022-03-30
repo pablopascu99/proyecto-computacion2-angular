@@ -5,6 +5,48 @@ $light-green: #BED442;
 $green: #83CB53;
 $light-grey: #CDCCCC;
 
+.positivo{
+    border-radius: 7px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    background-color: #f6ead1;
+    border: 2.75px solid #dbcbbd;
+    background-color: $light-green;
+    border-color: black;
+}
+
+.negativo{
+    border-radius: 7px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    background-color: #f6ead1;
+    border: 2.75px solid #dbcbbd;
+    background-color: $red;
+    border-color: black;
+}
+
+.neutro{
+    border-radius: 7px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    background-color: #f6ead1;
+    border: 2.75px solid #dbcbbd;
+    background-color: #f6ead1;
+    border-color: black;
+}
+
 .contenedor_sentimiento{
     padding-top: 40px;
     width: 50%;
@@ -27,17 +69,6 @@ $light-grey: #CDCCCC;
 .btn-analizar{
     background-color: $blue;
     color: white;
-}
-#resultado_sentimiento{
-    border-radius: 7px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
-    height: 200px;
-    background-color: #f6ead1;
-    border: 2.75px solid #dbcbbd;
 }
 
 .caja_sentimiento_analizado{

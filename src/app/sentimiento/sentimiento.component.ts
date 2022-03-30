@@ -14,30 +14,28 @@ export class SentimientoComponent implements OnInit {
   negativo: number = 0.0;
   neutral: number = 0.0;
   resultado_visible = false;
+  compound:number = 0.0;
 
   constructor(private api: SentimientoApiService) { }
 
   analizar_texto() {
-   this.resultado_visible = true;
    let respuesta = this.api.get_sentimiento(this.texto);
    let resultado_analisis = respuesta.subscribe(sentimiento =>{
+     // Se pone visisble una vez recibido el resultado de la API
+     this.resultado_visible = true;
      this.positivo = sentimiento.sentiment.pos;
      this.negativo = sentimiento.sentiment.neg;
+     this.compound = sentimiento.sentiment.compound;
+     
 
-     if(sentimiento.sentiment.compound > 0){
-      document.getElementById("resultado_sentimiento")!.style.background = "#BED442";
-      document.getElementById("resultado_sentimiento")!.style.borderColor = "black";
+     if(this.compound > 0){
       this.img_sentimiento = 'assets/images/happiness.png';
 
      } 
-     else if (sentimiento.sentiment.compound == 0) {
-      document.getElementById("resultado_sentimiento")!.style.background = "#f6ead1";
-      document.getElementById("resultado_sentimiento")!.style.borderColor = "#dbcbbd";
+     else if (this.compound == 0) {
       this.img_sentimiento = 'assets/images/sceptic.png';
      }
      else{
-       document.getElementById("resultado_sentimiento")!.style.background = "#F36F61";
-       document.getElementById("resultado_sentimiento")!.style.borderColor = "black";
        this.img_sentimiento = 'assets/images/sad.png';
      }
    });  

@@ -7,7 +7,7 @@
     <button class="btn btn-analizar" (click)="analizar_texto()"> Analizar </button>
 </div>
 <div class="caja_sentimiento_analizado">
-<div *ngIf="resultado_visible" id="resultado_sentimiento" >
+<div *ngIf="resultado_visible" [ngClass]="{'positivo': compound > 0, 'negativo': compound < 0, 'neutro': compound == 0}" id="resultado_sentimineto">
     <div class="cont_imagen">
         <img class="imagen_sentimiento" src={{img_sentimiento}} alt="">
     </div>
