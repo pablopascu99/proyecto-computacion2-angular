@@ -12,8 +12,9 @@ export class SentimientoApiService {
   constructor(private http: HttpClient) { }
 
   get_sentimiento(texto: string): Observable<Sentimiento>{
-    let url = environment.apiURL + texto;
-    let respuesta = this.http.get<Sentimiento>(url)
+    let url = environment.apiURL;
+    let contenido = {"texto": texto}
+    let respuesta = this.http.post<Sentimiento>(url, contenido)
     return respuesta;
   }
 }
