@@ -8,19 +8,19 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
-import { SentimientoComponent } from './sentimiento/sentimiento.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidaComponent,
-    SentimientoComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
