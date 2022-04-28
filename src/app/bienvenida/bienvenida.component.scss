@@ -1,64 +1,36 @@
-$blue: #34548B;
-$light-blue: #A1B5D0;
-$red: #F36F61;
-$light-green: #BED442;
-$green: #83CB53;
-$light-grey: #DBD9D8;
-.componentes-grid{
-    margin: 40px 40px;
-}
-.componente-card{
-    margin-left: 10%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: $blue;
-}
-.iconImage{
-    width: 40px;
-    height: 40px;
-}
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
 
-.sentiment-definition {
-    text-align: center;
-}
 
-.persona-image{
-    width: 100px;
-    height: 100px;
-}
 .ppal-container {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    .sentiment-definition {
-        
-        margin-bottom: 5vh;
-    }
+  height: 70%;
+  background-size: 100% 100%;
+  filter: opacity(0.8) drop-shadow(0 0 0 #F7F7F7);
+  background-image: url("../../assets/images/madrid-wallpaper.png");
+  }
+
+.field {
+  padding-top: 220px;
+  display:flex;
+  margin: auto;
+  width: 60%;
+  border-bottom: 4px solid rgb(112, 139, 165);
 }
 
-h1 {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    text-align: center;
-    letter-spacing: 5px;
+.field>input[type=text],
+.field>button {
+  display:block;
+  font:1.2em 'Montserrat Alternates';
 }
 
-.btn{
-    background: white;
-    transition: 1s;
-    &:hover {
-        background: #DBD9D8;
-    } 
+.field>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid rgb(112, 139, 165),
 }
 
-
-.buscar-container-button {
-    text-align: center;
-    
-    .buscar-button {
-        margin-top: 2vh;
-        margin-bottom: 5vh;
-        justify-content: center;
-        color: white;
-        background-color: #2ba833;
-    }
+.field>button {
+  padding:0.6em 0.8em;
+  background-color:rgb(112, 139, 165);
+  color:white;
+  border:none;
 }
