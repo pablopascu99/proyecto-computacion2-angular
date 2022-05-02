@@ -1,36 +1,89 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
-
-
-.ppal-container {
-  height: 70%;
-  background-size: 100% 100%;
-  filter: opacity(0.8) drop-shadow(0 0 0 #F7F7F7);
-  background-image: url("../../assets/images/madrid-wallpaper.png");
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-image: url("../../assets/images/madrid-wallpaper.png");
+    filter: opacity(0.8) drop-shadow(0 0 0 #F7F7F7);
+    background-size: 100% 100%;
+    height: 70%;
   }
 
-.field {
-  padding-top: 220px;
-  display:flex;
-  margin: auto;
-  width: 43%;
-  border-bottom: 4px solid rgb(112, 139, 165);
+  .conjunto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 620px;
 }
 
-.field>input[type=text],
-.field>button {
-  display:block;
-  font:1.2em 'Montserrat Alternates';
+.img_logo{
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
 }
 
-.field>input[type=text] {
-  flex:1;
-  padding:0.6em;
-  border:0.2em solid rgb(112, 139, 165),
+/*.text_logo{
+  font-size:40px;
+  padding: 30px;
+  margin-top: 60px;
+  font-family: 'Monospace';
+  color: black;
+  font-weight: bold;
+}*/
+
+::placeholder {
+  color: white;
 }
 
-.field>button {
-  padding:0.6em 0.8em;
-  background-color:rgb(112, 139, 165);
-  color:white;
-  border:none;
-}
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #069;
+    padding: 10px;
+    height: 60px;
+    border-radius: 40px;
+  }
+
+  .search_text{
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    float: left;
+    line-height: 60px;
+    transition: 0.3s;
+    width: 0;
+    padding-left: 10px;
+  }
+
+  .button{
+    width: 60px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media screen and (min-width:768px) {
+    .search:hover > .search_text{
+      width: 300px;
+    }
+  }
+  @media screen and (min-width:480px) {
+    .search:hover > .search_text{
+      width: 190px;
+    }
+  }
+  @media screen and (min-width:1024px) {
+    .search:hover > .search_text{
+      width: 500px;
+    }
+  }
+
