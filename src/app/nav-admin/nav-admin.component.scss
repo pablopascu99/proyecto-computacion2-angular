@@ -1,0 +1,48 @@
+@media only screen and (max-width: 600px){
+    .menu_navegacion{
+        display: flex;
+        justify-content: space-around;
+        background-color: #34548B;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .opciones_iconos{
+        margin-top: 3.75%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & mat-icon{
+            color: lightgray;
+        }
+    }
+
+    .texto_icono{
+        color: #DBD9D8;
+    }
+
+    .activado{
+        & mat-icon{
+            color: #BED442;
+            transition: 0.3s;
+        }
+        .texto_icono{
+            color: #BED442;
+            transition: 0.3s;
+        }
+    }
+}
+
+@media only screen and (min-width: 481px){
+    .menu_navegacion{
+        display: flex;
+        justify-content: space-between;
+        background-color: #34548B;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
