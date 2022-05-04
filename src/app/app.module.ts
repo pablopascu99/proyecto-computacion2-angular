@@ -19,6 +19,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatNativeDateModule} from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { NavAdminComponent } from './nav-admin/nav-admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ConfiguracionComponent } from './configuracion/configuracion.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     FooterComponent,
     ContactoComponent,
     FiltroPipe,
-
+    NavAdminComponent,
+    DashboardComponent,
+    ConfiguracionComponent
   ],
   imports: [
     BrowserModule,
