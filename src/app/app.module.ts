@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
@@ -13,6 +12,11 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactoComponent } from './contacto/contacto.component';
+import { FiltroPipe } from './pipes/filtro.pipe';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatNativeDateModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,9 @@ import { ContactoComponent } from './contacto/contacto.component';
     BienvenidaComponent,
     NavbarComponent,
     FooterComponent,
-    ContactoComponent
+    ContactoComponent,
+    FiltroPipe,
+
   ],
   imports: [
     BrowserModule,
@@ -29,9 +35,13 @@ import { ContactoComponent } from './contacto/contacto.component';
     MatGridListModule,
     MatCardModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

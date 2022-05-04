@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
+
 <body>
 
   <div class="photo">
@@ -11,9 +12,34 @@
     </div>
   </div>
 
-<div class="search">
-  <input type="text" class="search_text" placeholder="Escribir provincia">
-  <a href="" class="button">
-   <i class="bi bi-search"> </i></a>
-</div>
+
+  <div class="items">
+    
+    
+    <h1> ¿En qué estás interesado? </h1>
+    
+    <form class="search">
+      <mat-form-field>
+        <input type="text"
+              spellcheck="false"
+              matInput
+              placeholder=""
+              [formControl]="control"
+              [matAutocomplete]="auto">
+        <!-- <a href="" class="button">
+        <i class="bi bi-search"> </i></a> -->
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" class="autocomp">
+          <mat-option *ngFor="let country of filCountries | async" [value]="country">
+            {{country}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+  </div>
+    
+  
+
+    
 </body>
+
+
