@@ -15,7 +15,10 @@
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "strictPropertyInitialization": false,
     "importHelpers": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "target": "es2017",
     "module": "es2020",
     "lib": [
@@ -29,4 +32,6 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   }
+
+  
 }

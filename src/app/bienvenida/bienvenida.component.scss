@@ -1,3 +1,12 @@
+$blue: #34548B;
+$light-blue: #A1B5D0;
+$red: #F36F61;
+$light-green: #BED442;
+$green: #83CB53;
+$light-grey: #DBD9D8;
+$black: #000000;
+$white: #ffffff;
+  
   *{
     box-sizing: border-box;
     margin: 0;
@@ -38,32 +47,67 @@
   color: white;
 }
 
-  .search{
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+  .searche{
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #3f7785;
+    background-color: white;
     padding: 10px;
-    height: 60px;
-    border-radius: 40px;
+    height: 70px;
+    width: 700px;
   }
 
-  .search_text{
-    border: none;
-    background: none;
-    outline: none;
-    color: white;
-    font-size: 20px;
-    float: left;
-    line-height: 60px;
-    transition: 0.3s;
-    width: 0;
-    padding-left: 10px;
+  .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12%;
   }
+  
+  .autocomp{
+    size: auto;
+    opacity: 0.7;
+    border-radius: 50px;
+    
+  }
+
+  h1{
+    padding-top: 10px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+  }
+
+  input{
+    color: #83CB53;
+    text-decoration: none;
+    
+  }
+
+  mat-form-field{
+    
+    align-items: center;
+    width: 600px;
+    margin-top: 30px;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 70px;
+    width: -400%;
+    padding-left: 15px;
+    padding-right: 15px;
+    opacity: 0.8;
+    text-align: left;
+    font-size: 20px;
+
+  }
+
 
   .button{
     width: 60px;
