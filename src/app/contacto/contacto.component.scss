@@ -30,7 +30,7 @@ $light-grey: #DBD9D8;
     margin-left: 10vw;
     margin-right: 10vw;
     .sentiment-definition {
-        
+
         margin-bottom: 5vh;
     }
 }
@@ -40,6 +40,7 @@ h1 {
     margin-bottom: 5vh;
     text-align: center;
     letter-spacing: 5px;
+    font-weight: bold;
 }
 
 .btn{
@@ -47,18 +48,38 @@ h1 {
     transition: 1s;
     &:hover {
         background: #DBD9D8;
-    } 
-}
-
-
-.sentiment-container-button {
-    text-align: center;
-    
-    .sentiment-button {
-        margin-top: 2vh;
-        margin-bottom: 5vh;
-        justify-content: center;
-        color: white;
-        background-color: #34548B;
     }
 }
+
+.titulo {
+  background-color: #34548B;
+  padding: 40px 0 40px;
+}
+
+.quienes_somos {
+  background-color: #34548B;
+}
+
+.titulo h1{
+  color: white;
+}
+
+.titulo h2{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 19px;
+  color: #9A9A9A;
+  width: 50%;
+  font-weight: lighter;
+}
+
+.quienes_somos h3{
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  font-size: 15px;
+  color: white;
+  width: 80%;
+}
+
+
