@@ -22,6 +22,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavAdminComponent } from './nav-admin/nav-admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
+import {MatSelectModule} from '@angular/material/select';
+import { ResultadosComponent } from './resultados/resultados.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { ConfiguracionComponent } from './configuracion/configuracion.component'
     FiltroPipe,
     NavAdminComponent,
     DashboardComponent,
-    ConfiguracionComponent
+    ConfiguracionComponent,
+    ResultadosComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { ConfiguracionComponent } from './configuracion/configuracion.component'
     ReactiveFormsModule,
     MatInputModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent],

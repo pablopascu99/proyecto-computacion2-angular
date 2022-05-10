@@ -1,72 +1,120 @@
-  *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body{
+  background-image: url("../../assets/images/madrid-wallpaper.png");
+  filter: opacity(0.9) drop-shadow(0 0 0 #F7F7F7);
+  background-size: 100% 100%;
+  
+}
 
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline {
+    opacity: 0;
+    }
+
+@media only screen and (max-width: 600px){
+
+    
+
+  .contenedor_img{
+      margin: 3% 25%;
+      width: 50%;
+      & img {
+          width: 100%;
+      }
   }
 
-  body{
-    background-image: url("../../assets/images/madrid-wallpaper.png");
-    filter: opacity(0.8) drop-shadow(0 0 0 #F7F7F7);
-    background-size: 100% 100%;
-    height: 70%;
+  .contenedor_h1{
+    margin: 3% 25%;
+    width: 90%;
+    & h1 {
+        width: 100%;
+        font-size: 10px;
+        letter-spacing: 5px;
+        color: #000000;
+        font-weight: bold;
+
+    }
+}
+
+  
+  .linea_vertical{
+      border-right: 2px solid #000000;
   }
 
-  .conjunto{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .contenedor_buscador{
+      border: 2px solid #000000;
+      border-radius: 10px;
+      margin: 4% 10%;
+      width: 80%;
+      background-color: white;
+      height: 58px;
+      display: flex;
+      justify-content: space-between;
+      & .contenedor_tipo{
+          width: 30%;
+          height: 100%;
+      }
+
+      & .contenedor_buscar{
+          width: 70%;
+          
+          height: 100%;
+      }
+  }
 }
 
-.img_logo{
-  width: 200px;
-  height: 200px;
-  margin-top: 70px;
-  margin-left: 620px;
-}
+@media only screen and (min-width: 481px){
+  .nav_bar mat-icon{
+      display: none;
+  }
 
-::ng-deep .mat-form-field-underline {
-  display: none;
-}
+  .contenedor_img{
+      margin: 0 40%;
+      width: 25%;
+      & img {
+          width: 70%;
+      }
+  }
 
-.items{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.autocomp{
-  size: auto;
-  opacity: 0.7;
-  border-radius: 50px;
-}
-
-h1{
-  font-size: 30px;
-  letter-spacing: 5px;
-  color: #000000;
-  font-weight: bold;
-}
-
-input{
-  color: black;
-  text-decoration: none;
-}
-
-mat-form-field{
-
-  align-items: center;
-  width: 600px;
-  align-items: center;
-  background-color: white;
-  border-radius: 30px;
-  border: 2px solid black;
-  height: 70px;
-  padding-left: 30px;
-  padding-right: 15px;
-  opacity: 0.8;
-  text-align: left;
-  font-size: 18px;
+  .contenedor_h1{
+    margin: 0 34%;
+    padding-bottom: 20px;
+    width: 45%;
+    & h1 {
+        width: 70%;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #000000;
+        font-weight: bold;
+    }
 }
 
 
+  .linea_vertical{
+      border-right: 2px solid #000000;
+  }
+
+  .contenedor_buscador{
+      border: 2px solid #000000;
+      border-radius: 10px;
+      margin: 0 10%;
+      width: 80%;
+      height: 58px;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      & .contenedor_tipo{
+          width: 30%;
+          height: 100%;
+      }
+
+      & .contenedor_buscar{
+          width: 70%;
+          height: 100%;
+      }
+  }
+}
+
+
+.example-card {
+    max-width: 400px;
+  }

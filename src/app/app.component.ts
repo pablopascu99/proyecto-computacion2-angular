@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'proyecto-computacion2-angular';
+  title = 'NBHD - Proyecto';
 }

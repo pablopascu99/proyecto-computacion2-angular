@@ -1,21 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatInputModule } from '@angular/material/input';
 
-import { BienvenidaComponent } from './bienvenida.component';
+import { ResultadosComponent } from './resultados.component';
 
-describe('BienvenidaComponent', () => {
-  let component: BienvenidaComponent;
-  let fixture: ComponentFixture<BienvenidaComponent>;
+describe('ResultadosComponent', () => {
+  let component: ResultadosComponent;
+  let fixture: ComponentFixture<ResultadosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BienvenidaComponent ]
+      declarations: [ ResultadosComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BienvenidaComponent);
+    fixture = TestBed.createComponent(ResultadosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

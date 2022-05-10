@@ -3,38 +3,51 @@
 
 <body>
 
-  <div class="photo">
-    <div class="conjunto">
-            <div class="cont_img">
-                <img class="img_logo" src="../../assets/images/NBHD.png">
-            </div>
-            <!-- <span class="text_logo">NBHD</span> -->
-    </div>
+  <div class="contenedor_img">
+    <img src="assets/images/NBHD.png" alt="">
+   
   </div>
 
+  <div class="contenedor_h1">
+    <h1>¿En qué estás interesado?</h1>
+  </div>
 
-  <div class="items">
+  
+  <div class="contenedor_buscador">
+    <mat-form-field class="contenedor_tipo" appearance="fill">
+        <mat-select ngDefaultControl [(ngModel)]="inmueble" disableOptionCentering>
+          <mat-option *ngFor="let tipo of tipos" value={{tipo}}>
+            {{tipo}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
 
-   <!-- <h1> ¿En qué estás interesado? </h1> -->
+    <div class="linea_vertical"></div>
 
-    <form class="search">
-      <mat-form-field>
-        <input type="text"
-              spellcheck=""
-              matInput
-              placeholder="Escriba una provincia"
-              [formControl]="control"
-              [matAutocomplete]="auto">
-        <!-- <a href="" class="button">
-        <i class="bi bi-search"> </i></a> -->
-        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" class="autocomp">
+    <mat-form-field class="contenedor_buscar" appearance="fill">
+        <input 
+        matInput
+        type="text"
+        spellcheck=""
+        placeholder="Madrid, Valladolid, Toledo, Murcia..."
+        [formControl]="control"
+        [matAutocomplete]="auto">
+        <mat-autocomplete  #auto="matAutocomplete" class="autocomp">
           <mat-option *ngFor="let country of filCountries | async" [value]="country">
             {{country}}
           </mat-option>
         </mat-autocomplete>
-      </mat-form-field>
-    </form>
+        <button mat-icon-button matSuffix onclick="location.href='../resultados'">
+            <mat-icon>search</mat-icon>
+        </button>
+    </mat-form-field>
   </div>
+
+
 </body>
+
+
+
+
 
 
