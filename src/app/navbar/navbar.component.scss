@@ -4,87 +4,63 @@ $red: #F36F61;
 $light-green: #BED442;
 $green: #83CB53;
 
-.iconLogo{
-    display: block;
-    margin-left: -15px;
-    width: 100px;
-    height: 100px;
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+.left-side, .right-side {
+    height: 100vh
 }
 
-.container-fluid {
-    margin-top: -10px;
-    margin-bottom: -7.8px;
-    padding-right: 2.5vw;
-    padding-left: 2.5vw;
-    background: $blue;
-    .nav-link {
-        color: white;
-        transition: 1s;
-    }
-}
-.navbar-toggler-icon{
-    background-image: url("../../assets/images/menu-icon.png");
+.navbar-transparent {
+    background: transparent
 }
 
-.navbar-toggler{
-    border-color: white;
+.navbar-nav>li>a {
+    color: white;
 }
 
-.navbar-nav {
-    padding: 20px;
+.navbar-nav>li:hover {
+    border-bottom: 0.3rem solid $green;
+}
+
+.navbar-brand:hover {
+    color: $green
+}
+
+.left-side img {
+    padding-top: 100px
 }
 
 .nav-item {
-    text-align: center;
-    margin-right: 3vh;
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px;
-    transition: 1s;
-    padding: 10px
-}
-
-.login{
-    padding-top: 6px;
-    padding-left: 1000px;
-
-}
-.register{
-    padding-top: 6px;
-    margin-left: 30px;
-}
-
-.logreg-item{
-  text-align: right;
-  margin-right: 3vh;
-  padding: 5px 5px 5px 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.nav-item:hover{
-    background-color: white;
-    a{
-        color: $green
-    }
-}
-@media (max-width:768px){
-    .nav-item{
-        margin: 10px;
-    }
-}
-
-a {
-    letter-spacing: 1px;
-
-}
-
-.links_nav {
-    color: #ffffff;
     font-size: 20px;
+    color: $blue;
 }
 
-.activo {
+.navbar-toggler-icon {
+    color: white;
 
-    text-decoration: underline !important;
-    text-decoration-color: $green;
+}
+
+.shape {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    clip-path: fill-box;
+    -webkit-clip-path: ellipse(500px 500px at 10% 5%)
+}
+
+.right-side {
+    padding-top: 150px
+}
+
+.right-side h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 2.4em;
+    text-align: center
+}
+
+.right-side p {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold
 }

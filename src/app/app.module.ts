@@ -54,7 +54,7 @@ import { MatButtonModule} from '@angular/material/button';
     MatIconModule,
     MatToolbarModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -52,25 +52,25 @@ h1 {
 }
 
 .titulo {
-  background-color: #34548B;
+  background-color: white;
   padding: 40px 0 40px;
 }
 
 .quienes_somos {
-  background-color: #34548B;
+  background-color: white;
 }
 
 .titulo h1{
-  color: white;
+  color: $blue;
 }
 
 .titulo h2{
   text-align: center;
   margin: 0 auto;
   font-size: 19px;
-  color: #9A9A9A;
+  color: black;
   width: 50%;
-  font-weight: lighter;
+  font-weight: bolder;
 }
 
 .quienes_somos h3{
@@ -78,7 +78,7 @@ h1 {
   margin: 0 auto;
   padding-bottom: 70px;
   font-size: 15px;
-  color: white;
+  color: black;
   width: 80%;
 }
 
