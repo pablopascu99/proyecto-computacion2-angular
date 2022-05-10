@@ -24,6 +24,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ConfiguracionComponent } from './configuracion/configuracion.component';
 import {MatSelectModule} from '@angular/material/select';
 import { ResultadosComponent } from './resultados/resultados.component';
+import { MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { ResultadosComponent } from './resultados/resultados.component';
     NavAdminComponent,
     DashboardComponent,
     ConfiguracionComponent,
-    ResultadosComponent
+    ResultadosComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +53,8 @@ import { ResultadosComponent } from './resultados/resultados.component';
     MatInputModule,
     MatIconModule,
     MatToolbarModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
