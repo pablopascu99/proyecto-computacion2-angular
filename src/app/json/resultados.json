@@ -2,12 +2,33 @@
 	"titulo_card": "Titulo de la tarjeta pepito",
 	"subtitulo_card": "Subtitulo de la tarjeta",
 	"entradilla_card": "Entradilla de la tarjeta",
-	"texto_card": "",
-	"img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+	"texto_card": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis nulla quis risus condimentum porttitor. Etiam enim arcu, imperdiet vel diam a, pulvinar euismod libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. In non fermentum dolor. Morbi at rutrum diam, non elementum velit. Mauris vitae ligula id nisl semper commodo. Nulla facilisi. Nullam ac pellentesque magna, nec semper metus.",
+	"img": "https://images.ecestaticos.com/AJQdr8ECXFUw275zIJgpry5ZkQw=/125x0:2144x1513/600x450/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F3b8%2F281%2Fef2%2F3b8281ef2d44ef19e6a613d298ccf635.jpg"
 }, {
 	"titulo_card": "Titulo de la tarjeta 2sdasdsa",
 	"subtitulo_card": "Subtitulo de la tarjeta",
 	"entradilla_card": "Entradilla de la tarjeta",
-	"texto_card": "",
+	"texto_card": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis nulla quis risus condimentum porttitor. Etiam enim arcu, imperdiet vel diam a, pulvinar euismod libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. In non fermentum dolor. Morbi at rutrum diam, non elementum velit. Mauris vitae ligula id nisl semper commodo. Nulla facilisi. Nullam ac pellentesque magna, nec semper metus.",
+	"img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+},
+{
+	"titulo_card": "Titulo de la tarjeta 2sdasdsa",
+	"subtitulo_card": "Subtitulo de la tarjeta",
+	"entradilla_card": "Entradilla de la tarjeta",
+	"texto_card": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis nulla quis risus condimentum porttitor. Etiam enim arcu, imperdiet vel diam a, pulvinar euismod libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. In non fermentum dolor. Morbi at rutrum diam, non elementum velit. Mauris vitae ligula id nisl semper commodo. Nulla facilisi. Nullam ac pellentesque magna, nec semper metus.",
+	"img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+},
+{
+	"titulo_card": "Titulo de la tarjeta 2sdasdsa",
+	"subtitulo_card": "Subtitulo de la tarjeta",
+	"entradilla_card": "Entradilla de la tarjeta",
+	"texto_card": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis nulla quis risus condimentum porttitor. Etiam enim arcu, imperdiet vel diam a, pulvinar euismod libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. In non fermentum dolor. Morbi at rutrum diam, non elementum velit. Mauris vitae ligula id nisl semper commodo. Nulla facilisi. Nullam ac pellentesque magna, nec semper metus.",
+	"img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+},
+{
+	"titulo_card": "Titulo de la tarjeta 2sdasdsa",
+	"subtitulo_card": "Subtitulo de la tarjeta",
+	"entradilla_card": "Entradilla de la tarjeta",
+	"texto_card": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi convallis nulla quis risus condimentum porttitor. Etiam enim arcu, imperdiet vel diam a, pulvinar euismod libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. In non fermentum dolor. Morbi at rutrum diam, non elementum velit. Mauris vitae ligula id nisl semper commodo. Nulla facilisi. Nullam ac pellentesque magna, nec semper metus.",
 	"img": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
 }]

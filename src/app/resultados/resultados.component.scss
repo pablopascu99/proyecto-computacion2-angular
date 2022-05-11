@@ -2,6 +2,13 @@
   border: 1px solid black;
 }
 
+mat-card img{
+  margin-left: 2px;
+  object-fit: cover; /*this makes the image in src fit to the size specified below*/
+  width: 30%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 30%;
+}
+
 .col-md{
   padding: 20px;
   background-color: #F7F8F9;
