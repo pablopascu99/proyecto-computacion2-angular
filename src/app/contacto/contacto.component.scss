@@ -2,7 +2,7 @@
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
-	background-color: var(--white);
+	background-color: var(--white)
 }
 
 p {
@@ -21,7 +21,6 @@ h1 {
 .item {
 	width: 94%;
 	margin: 2em auto;
-	display: grid;
 	padding: 20px;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(12, auto);
