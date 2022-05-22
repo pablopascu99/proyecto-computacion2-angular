@@ -1,93 +1,106 @@
-$blue: #34548B;
-$light-blue: #A1B5D0;
-$red: #F36F61;
-$light-green: #BED442;
-$green: #83CB53;
-$light-grey: #DBD9D8;
 
-hr.new5 {
-  border: 10px solid $blue;
-  margin-left: 10%;
-  margin-right: 10%;
-  border-radius: 5px;
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	background-color: var(--white);
 }
 
-.componentes-grid{
-    margin: 10px 30px;
-}
-.componente-card{
-    margin-left: 10%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: $blue;
-}
-.iconImage{
-    width: 40px;
-    height: 40px;
-}
-
-.sentiment-definition {
-    text-align: center;
-}
-
-.persona-image{
-    width: 100px;
-    height: 100px;
-}
-.ppal-container {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    .sentiment-definition {
-
-        margin-bottom: 5vh;
-    }
+p {
+	line-height: 26px;
 }
 
 h1 {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    text-align: center;
-    letter-spacing: 5px;
-    font-weight: bold;
+	font-family: sans-serif;
+  font-size: 2.5em;
+	margin-bottom: 1em;
+	grid-column: 1/13;
+	grid-row: 1/2;
+  font-weight: bold;
 }
 
-.btn{
-    background: white;
-    transition: 1s;
-    &:hover {
-        background: #DBD9D8;
-    }
+.item {
+	width: 94%;
+	margin: 2em auto;
+	display: grid;
+	padding: 20px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, auto);
+	gap: 10px;
+	background-color: var(--white);
+	background-image: url("https://www.transparenttextures.com/patterns/debut-light.png");
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
-.titulo {
-  background-color: white;
-  padding: 20px 0 20px;
+.item figure {
+	position: relative;
+	width: 98%;
+	max-height: 600px;
+	object-fit: cover;
+	overflow: hidden;
+	grid-column: 1/13;
+	grid-row: 2/5;
+}
+.item img {
+	width: 100%;
+}
+.item figcaption {
+	position: absolute;
+	padding: 5px;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	background-color: var(--white);
+	opacity: 0.7;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
-.quienes_somos {
-  background-color: white;
+.location {
+  font-size: 14px;
 }
 
-.titulo h1{
-  color: $blue;
+.characteristics{
+  font-size: 14px;
 }
 
-.titulo h2{
-  text-align: center;
-  margin: 0 auto;
-  font-size: 19px;
-  color: black;
-  width: 50%;
-  font-weight: bolder;
+.phone{
+  font-size: 14px;
 }
 
-.quienes_somos h3{
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 70px;
-  font-size: 15px;
-  color: black;
-  width: 80%;
+@media screen and (min-width: 780px) {
+	.item {
+		max-width: 1000px;
+	}
+	.item figure {
+		grid-column: 1/7;
+		grid-row: 2/5;
+		max-height: 500px;
+		align-self: flex-start;
+	}
+	.description {
+		grid-column: 7/13;
+		grid-row: 2/5;
+		align-self: flex-start;
+	}
+
+	.characteristics {
+		grid-column: 7/13;
+		grid-row: 5/7;
+	}
+	.phone {
+		grid-column: 7/13;
+		grid-row: 8/8;
+	}
+
+  .location{
+    grid-column: 7/13;
+		grid-row: 7/8;
+  }
 }
 
-
+i{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+}
