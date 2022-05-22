@@ -33,15 +33,13 @@ h1 {
 
 .item figure {
 	position: relative;
-	width: 98%;
-	max-height: 600px;
 	object-fit: cover;
 	overflow: hidden;
 	grid-column: 1/13;
 	grid-row: 2/5;
 }
 .item img {
-	width: 100%;
+	width: 95%;
 }
 .item figcaption {
 	position: absolute;
