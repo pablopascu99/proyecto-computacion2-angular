@@ -68,9 +68,13 @@ h1 {
   font-size: 14px;
 }
 
+.price{
+  font-size: 14px;
+}
+
 @media screen and (min-width: 780px) {
 	.item {
-		max-width: 1000px;
+		max-width: 1100px;
 	}
 	.item figure {
 		grid-column: 1/7;
@@ -81,21 +85,25 @@ h1 {
 	.description {
 		grid-column: 7/13;
 		grid-row: 2/5;
-		align-self: flex-start;
 	}
 
-	.characteristics {
-		grid-column: 7/13;
+	.phone {
+		grid-column: 1/13;
 		grid-row: 5/7;
 	}
-	.phone {
-		grid-column: 7/13;
-		grid-row: 8/8;
+	.characteristics {
+		grid-column: 1/13;
+		grid-row: 6/8;
 	}
 
   .location{
-    grid-column: 7/13;
+    grid-column: 1/13;
 		grid-row: 7/8;
+  }
+
+  .price{
+    grid-column: 5/13;
+		grid-row: 5/7;
   }
 }
 
